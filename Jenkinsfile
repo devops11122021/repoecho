@@ -27,10 +27,12 @@ pipeline {
         }
         stage ('build'){
             steps {
-                echo " this is build stage"
-                pwd
-                echo "$JOB_NAME"
-                echo "$WORKSPACE"
+                sh '''
+                  echo " this is build stage"
+                  pwd
+                  echo "$JOB_NAME"
+                  echo "$WORKSPACE"
+                '''
             }
         }
         stage ('testing') {

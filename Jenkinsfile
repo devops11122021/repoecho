@@ -35,6 +35,7 @@ pipeline {
                   echo "$JOB_NAME"
                   sh $WORKSPACE/script.sh
                   echo "newly added"
+                  echo "this is testing"
                 '''
             }
         }

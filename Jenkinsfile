@@ -34,6 +34,7 @@ pipeline {
                   pwd
                   echo "$JOB_NAME"
                   sh $WORKSPACE/script.sh
+                  echo "newly added"
                 '''
             }
         }

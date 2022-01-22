@@ -31,7 +31,7 @@ pipeline {
                   echo " this is build stage"
                   pwd
                   echo "$JOB_NAME"
-                  echo "$WORKSPACE"
+                  ls $WORKSPACE/
                 '''
             }
         }

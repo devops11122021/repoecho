@@ -35,9 +35,6 @@ pipeline {
                   echo "$JOB_NAME"
                   sh $WORKSPACE/script.sh
                   echo "newly added"
-                   echo "newly added"
-                   echo "newly added"
-                   echo "newly added"
                 '''
             }
         }
